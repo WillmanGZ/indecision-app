@@ -1,15 +1,10 @@
 <template>
-  <section>
-    <h3>Counter: {{ 10 }}</h3>
-    <h3>Square: {{ 10 * 10 }}</h3>
+  <h1>Mi Primera App</h1>
+  <hr />
 
-    <div>
-      <button>+1</button>
-      <button>-1</button>
-    </div>
-  </section>
+  <MyCounter :value="5" />
 </template>
 
 <script lang="ts" setup>
-console.log('Hola Mundo');
+import MyCounter from './components/MyCounter.vue';
 </script>
